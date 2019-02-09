@@ -1,0 +1,8 @@
+version: "3"
+services:
+  hts-ml:
+    image: tensorflow/serving
+    volumes:
+      - ./model:/models/model
+    ports:
+      - 80:8501
